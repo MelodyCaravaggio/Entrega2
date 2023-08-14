@@ -29,7 +29,7 @@ h1 {
     text-align: center;
     color: black;
 }
-.content{
+section{
     margin-bottom: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
@@ -227,17 +227,22 @@ footer div p {
     font-weight: 500;
 }
 @media screen and (min-width: 390px) {
-    .index .content .text h1 {
+    .index .content section h1 {
         font-size: 4vw;
         font-weight: 400;
-        padding: 0.5rem 1rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        text-align: center;
         width: 100%;
         box-sizing: border-box;
+        white-space: wrap;
         }
 
+    }
+    .index section div{
+        align-items: center;
+    }
+    .index section{
+        width: 100%;
     }
     .index .content div h2 {
         font-size: 2.5rem;
@@ -252,7 +257,6 @@ footer div p {
         gap: 2rem;
         margin-top: 2rem;
     }
-
     .index .content .button1 button,
     .index .content .button2 button {
         width: 100%;
