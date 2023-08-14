@@ -29,7 +29,7 @@ h1 {
     text-align: center;
     color: black;
 }
-section{
+.content{
     margin-bottom: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
@@ -58,7 +58,6 @@ section{
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: none;
     gap: 0;
 }
 .index section div h1 {
@@ -228,18 +227,6 @@ footer div p {
     font-weight: 500;
 }
 @media screen and (min-width: 390px) {
-    .index {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-    }
-
-    .index .content {
-        margin: 3rem 0;
-    }
-
     .index .content .text h1 {
         font-size: 4vw;
         font-weight: 400;
@@ -256,21 +243,6 @@ footer div p {
         font-size: 2.5rem;
         width: 100%;
         margin: 2rem 0;
-    }
-
-    .index .content .portada {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-height: 390px;
-        overflow: hidden;
-        padding: 2.625rem 0rem;
-    }
-    
-    .index .content .portada img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: cover;
     }
     .index .content .button1,
     .index .content .button2 {
@@ -304,11 +276,5 @@ footer div p {
         text-decoration: none;
         color: #3c3040;
     }
-    .card {
-        width: 100%;
-        border-left: 5px solid #ccc; 
-        margin-bottom: 20px; 
-        box-sizing: border-box; 
-      }
 
 
