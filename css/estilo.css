@@ -18,11 +18,9 @@ background-color: white;
 }
 h1 {
     flex: 1;
-    padding: 20px;
     font-size: 55px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
-    margin: 0;
     margin-bottom: 20px;
     margin-top: 30px;
     line-height: 1.6;
@@ -42,22 +40,20 @@ section{
 .index {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     padding: 2.625rem 0;
-    flex-wrap: wrap;
     justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 .index section {
     width: 50%;
-    padding-right: 2rem;
     box-sizing: border-box;
 }
 .index section div{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
     gap: 0;
 }
 .index section div h1 {
@@ -66,25 +62,22 @@ section{
     font-size: 3rem;
     text-align: left;
     margin: 1rem 0;
-    margin-left: 0;
-    white-space: nowrap;
-    margin-left: 0;
 }
 .index section div h2 {
     color: black;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 3.125rem;
-    width: 18.8125rem;
+    width: 38rem;
     text-align: left;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    margin-left: 0;
-    margin: 20px;
 }
 .index section .button1{
-    flex-direction: column;
+    flex-direction: row;
     row-gap: 1.875rem;
+    display: flex;
+    gap: 2rem;
 }
 .index section .button1 button{
     width: 18.125rem;
@@ -120,7 +113,6 @@ div section {
     max-width: 100%;
     height: auto;
     object-fit: cover;
-    height: 110vh;
     border-radius: 10px;
     margin: 10px;
 }
@@ -226,59 +218,33 @@ footer div p {
     font-size: 1rem;
     font-weight: 500;
 }
-@media screen and (min-width: 390px) {
-    .index .content section h1 {
-        font-size: 4vw;
-        font-weight: 400;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        width: 100%;
-        box-sizing: border-box;
-        white-space: wrap;
-        }
-
-    }
-    .index section div{
+@media screen and (max-width: 600px)
+{
+    .index {
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        padding: 2.625rem 1rem;
+        justify-content: center;
+        max-width: 1400px;
+        margin: 0 auto;
+        }
+        .index section div h1 {
+        color: black;
+        font-family: "Roboto", sans-serif;
+        font-size: 2rem;
+        text-align: left;
+        margin: 1rem 0;
+        margin-left: 0;
+        white-space: nowrap;
+        margin-left: 0;
     }
-    .index section{
-        width: 100%;
+    .index section {
+        box-sizing: border-box;
     }
-    .index .content div h2 {
-        font-size: 2.5rem;
-        width: 100%;
-        margin: 2rem 0;
-    }
-    .index .content .button1,
-    .index .content .button2 {
+    .index .portada {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
-        margin-top: 2rem;
     }
-    .index .content .button1 button,
-    .index .content .button2 button {
-        width: 100%;
-        height: 3.5rem;
-        border-radius: 0.5rem;
-        background-color: #C09AD9;
-        border-color: #C09AD9;
-    }
-
-    .index .content .button1 button:hover,
-    .index .content .button2 button:hover {
-        background-color: #b290df;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-    }
-
-    .index .content .button1 button a,
-    .index .content .button2 button a {
-        font-size: 1rem;
-        font-weight: 500;
-        text-decoration: none;
-        color: #3c3040;
-    }
-
-
+}
