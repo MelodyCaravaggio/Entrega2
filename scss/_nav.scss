@@ -1,0 +1,12 @@
+.colorMenu {
+    background-color: olive;
+    
+    a.nav-link {
+        color: #ffffff;
+        transition: color 0.3s;
+        
+        &:hover {
+            color: orange;
+        }
+    }
+}

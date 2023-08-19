@@ -1,0 +1,92 @@
+
+.index {
+    display: flex;
+    flex-direction: row;
+    padding: 2.625rem 0;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 82vh;
+
+    section {
+        width: 80%;
+        box-sizing: border-box;
+        padding: 4rem 0 6rem;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            gap: 0;
+
+            h1 {
+                flex: 1;
+                font-size: 40px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-weight: bold;
+                margin-bottom: 20px;
+                margin-top: 30px;
+                line-height: 1.6;
+                text-align: center;
+                color: black;
+            }
+
+            h2 {
+                color: black;
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-size: 48px;
+                width: 100%;
+                text-align: left;
+                margin-top: 32px;
+                margin-bottom: 32px;
+            }
+        }
+
+        .button1 {
+            flex-direction: row;
+            row-gap: 1.875rem;
+            display: flex;
+            gap: 2rem;
+
+            button {
+                width: 18.125rem;
+                height: 5.25rem;
+                border-radius: 1rem;
+                background-color: olive;
+                border-color: olive;
+
+                a {
+                    font-family: "Roboto", sans-serif;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+
+            .button2 {
+                background-color: white;
+            }
+        }
+
+        .buttons2 {
+            flex-direction: column;
+            row-gap: 1.875rem;
+        }
+    }
+
+    .portada {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 10px;
+        }
+    }
+}
