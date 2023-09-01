@@ -216,21 +216,13 @@ footer {
     justify-content: center;
     max-width: 1400px;
     margin: 0 auto; }
-  .index section div h1 {
-    color: black;
-    font-family: "Roboto", sans-serif;
-    font-size: 40px;
-    text-align: left;
-    margin: 1rem 0;
-    margin-left: 0;
-    margin-left: 0; }
+  .index section div h1,
   .index section div h2 {
     color: black;
     font-family: "Roboto", sans-serif;
     font-size: 40px;
     text-align: left;
     margin: 1rem 0;
-    margin-left: 0;
     margin-left: 0; }
   .index section {
     box-sizing: border-box; }
@@ -257,9 +249,7 @@ footer {
       transition: border-left-color 0.3s ease, transform 0.3s ease; }
   .text {
     font-size: 20px; }
-  h1 {
-    font-size: 30px; }
-  h4 {
-    font-size: 30px; }
+  h1,
+  h4,
   .work {
     font-size: 30px; } }
