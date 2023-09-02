@@ -8,6 +8,10 @@
     line-height: 1.6;
     padding: 1rem 0;
 }
+main{
+    max-width: 1400px;
+    margin: 0 auto;
+}
 .team{
     margin: 0 auto;
     margin-bottom: 50px;
@@ -53,6 +57,7 @@ div h4 {
     width: 300px;
     height: 300px;
     object-fit: cover;
+    transition: 0,2s;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     opacity: .4;
@@ -82,14 +87,19 @@ div h4 {
 .card {
     width: 100%;
     padding: 10px;
-    border-left: 5px solid #000;
     margin: 0 auto;
     border: none;
+    padding: 10px; 
+    border-left: 5px;
+    width: 20rem;
 
     &:hover {
         transform: scale(1.10);
         transition: border-left-color 0.3s ease, transform 0.3s ease;
     }
+}
+.card-text{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 .formulario {
