@@ -257,13 +257,15 @@ footer {
     margin: 0 auto;
     max-width: 1000px;
     padding: 0 20px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    border: none; }
   .card {
     width: 100%;
     padding: 10px;
     border-left: 5px solid #000;
     margin: 0 auto;
-    align-content: center; }
+    align-content: center;
+    border: none; }
     .card:hover {
       transform: scale(1.1);
       transition: border-left-color 0.3s ease, transform 0.3s ease; }
